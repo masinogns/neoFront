@@ -1,4 +1,18 @@
 #map {
- height: 800px;
- width: 800px;
+ height: 300px;
+ width: 300px;
+ float: left;
+}
+
+#list{
+  height: 0px;
+  width: 300px;
+  background-color: blue;
+  float: left;
+}
+
+.nav{
+  height: 60px;
+  width: 300px;
+  margin: auto;
 }
