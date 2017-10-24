@@ -91,6 +91,7 @@ header ul .menu-contents{
   height: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 3;
+  transition: 0.2s all;
 }
 
 .menu-modal-list{
