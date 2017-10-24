@@ -12,4 +12,3 @@ menuIcon.style.marginTop = (mainTitleBox.offsetHeight/2 - menuIcon.offsetHeight/
  for(var i = 0; i < initConentList.length; i++){
      initConentList[i].style.height = (settingHeight/3) + "px";
  }
-

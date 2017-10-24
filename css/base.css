@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 14px;
 }
 
 
@@ -35,7 +35,7 @@ header .main-title{
 
 header .main-title .title{
     text-align: center;
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 header .main-title .menu-item{
@@ -80,7 +80,3 @@ header ul .menu-contents{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
