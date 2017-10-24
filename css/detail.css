@@ -11,6 +11,12 @@
   float: left;
 }
 
+div#list div.item{
+  height: 100px;
+  width: 300px;
+  background-color: black;
+}
+
 .nav{
   height: 60px;
   width: 300px;
