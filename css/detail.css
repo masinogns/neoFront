@@ -1,36 +1,42 @@
-#map {
- height: 300px;
- width: 300px;
- float: left;
+.map-container{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-#list{
-  height: 0px;
-  width: 300px;
-  background-color: blue;
-  float: left;
+div.container .nav{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 40%;
+  height: 5rem;
+  list-style: none;
+  margin: 2rem;
 }
 
-div#list div.item{
-  height: 100px;
-  width: 300px;
-  background-color: black;
+div.container .nav li{
+  width: 50%;
 }
 
-.nav{
-  height: 80px;
-  width: 300px;
-  margin: auto;
+div.container .nav li a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* slider part*/
+.active{
+  background-color: rgba(0,0,0,0.1);
+}
+
 #slidecontainer {
     width: 50%;
 }
 
 .slider {
     -webkit-appearance: none;
-    width: 100px;
+    width: 100%;
     height: 25px;
     background: #d3d3d3;
     outline: none;
@@ -43,19 +49,12 @@ div#list div.item{
     opacity: 1;
 }
 
-/*
--webkit- : 구글, 사파리 브라우저에 적용
--moz- : 파이어폭스 브라우저에 적용
--ms- : 익스플로러에 적용, 보통 생략합니다.
--o- : 오페라 브라우저에 적용
-출처: http://mainia.tistory.com/3671 [녹두장군 - 상상을 현실로]
-*/
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     /*slider marker size*/
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: black;
     cursor: pointer;
 }
@@ -67,4 +66,32 @@ div#list div.item{
     height: 25px;
     background: #4CAF50;
     cursor: pointer;
+}
+
+div.container .content{
+  width: 100%;
+  height: 70%;
+  margin-top: auto;
+}
+
+#slidecontainer p{
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+ height: 100%;
+ width: 100%;
+}
+
+#list{
+  height: 0px;
+  width: 100%;
+  background-color: blue;
+}
+
+div#list div.item{
+  height: 10rem;
+  width: 100%;
+  background-color: black;
 }

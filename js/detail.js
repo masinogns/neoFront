@@ -2,13 +2,7 @@
 /* slider url
 https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
 
 var content = document.querySelector(".content");
 
@@ -29,12 +23,12 @@ function activeNav(e){
 
   if (target.className == "map") {
     console.log("map is clicked");
-    content.children["list"].style.height = "0px";
-    content.children["map"].style.height = "300px";
+    content.children["list"].style.height = "0";
+    content.children["map"].style.height = "100%";
 
   }else { // if target == enter
     console.log("list is clikced");
-    content.children["list"].style.height = "300px";
+    content.children["list"].style.height = "100%";
     content.children["map"].style.height = "0px";
   }
 
