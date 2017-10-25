@@ -10,23 +10,6 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-
-
-var map;
-var maxZoomService;
-var infoWindow;
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: {lat: 35.6894, lng: 139.692},
-    mapTypeId: 'hybrid'
-  });
-
-
-}
-
-
 var content = document.querySelector(".content");
 
 var tag = document.querySelector(".nav");
