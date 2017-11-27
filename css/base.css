@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 3px;
 }
 
 body{
@@ -17,74 +17,138 @@ a{
     text-decoration: inherit; /* no underline */
 }
 
-a:link{
-    color: black;
-}
-a:hover{
-    color: black;
-}
+a:link,
+a:hover,
 a:active{
-    color: black;
+    text-decoration: none;
 }
 
 header{
-    height: 15rem;
+    height: 17vh;
 }
 
 header .main-title{
-    height: 10rem;
-    background-color: ghostwhite;
+    /* height: 10rem; */
+    height: 10vh;
+    background-color: rgb(37, 178, 208);
 }
 
 header .main-title .title{
+    height: 10vh;
+    padding: 3vh;
     text-align: center;
-    font-size: 5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 8rem;
+    color: white;
 }
 
 header .main-title .menu-item{
     position: absolute;
     margin-left: 20px;
-    width: 30px;
-    height: 30px;
+    width: 5vh;
+    height: 5vh;
 }
 
 header .main-title .menu-item img{
-    max-height: 30px;
-    max-width: 30px;
+    max-width: 5vh;
+    max-height: 5vh;
+    margin-top: 2.5vh;
+    margin-left: 3vh;
     width: auto;
     height: auto;
 }
 
 header .header-option-list{
-    height: 5rem;
+    /* height: 5rem; */
+    height: 7vh;
+    font-size: 5rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-header ul .menu-contents{
+.header-option-list {
+  color: rgb(71, 187, 212);
+}
+
+header > ul > .menu-contents{
     list-style: none;
     display: flex;
     justify-content: center;
     flex: 1;
     align-items: center;
-    border: 1px solid #e1e1e1;
+    /* border: 1px solid white; */
 }
 
-.container{
-  height: calc(100vh - 15rem) ;
+header > ul > .menu-contents:hover{
+  border-bottom: 0.6rem solid rgb(38, 161, 188);
+  background-color: rgb(71, 187, 212);
+  color: white;
 }
 
-.container ul{
+.container > ul {
+    font-size: 10rem;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
-.container ul .content-list{
+.container > ul > .content-list{
     list-style: none;
     display: flex;
     width: 100%;
+    height: 24vh;
     justify-content: center;
     align-items: center;
+
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+.content-list > a {
+  width: 100%;
+}
+
+.content-list > a > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58,58,58,0.4) ;
+}
+
+.content-list > a > div > dl {
+  padding-top: 6vh;
+}
+
+.content-list > a > div > dl > dt {
+  font-size: 10rem;
+}
+
+.content-list > a > div > dl > dd {
+  width: 16vh;
+  font-size: 5rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+}
+
+#sightseeing {
+  /* background-image:url("/img/index/food.jpg"); */
+  /* border-top: 3px groove white; */
+  background: url("/img/index/sightsee.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: left top;
+}
+
+#restaurant {
+  background: url("/img/index/food.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: left top;
+}
+
+#stay {
+  background: url("/img/index/stay.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: left top;
 }
 
 .menu-modal{
@@ -121,3 +185,9 @@ header ul .menu-contents{
   font-weight: bold;
   border-bottom: 1px solid black;
 }
+
+footer {
+  height: 11vh;
+  background-color: rgb(58,58,58);
+}
+/*Kihoon`s */
