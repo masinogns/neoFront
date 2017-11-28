@@ -15,3 +15,29 @@
    if(e.target.className == "menu-modal")
      menuModal.style.height = "0px"
  },true)
+
+
+ function googleTranslateElementInit() {
+ new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+ }
+
+
+var btnModal = document.getElementById('btn-modal');
+var modal = document.getElementById('modal');
+var btnClose = document.getElementById('close');
+
+btnModal.addEventListener("click", function(){
+  console.log("modal button is clicked");
+  modal.style.display = "block";
+});
+
+btnClose.addEventListener("click", function(){
+  console.log("close button is clicked");
+  modal.style.display = "none";
+});
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

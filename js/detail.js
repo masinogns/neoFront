@@ -39,3 +39,7 @@ function changeActive(parent, index){
   tag.children[index].className = "";
   parent.className = "active";
 }
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
