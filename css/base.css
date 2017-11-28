@@ -102,7 +102,6 @@ header > ul > .menu-contents:hover{
 
     color: white;
     border-bottom: 1px solid white;
-
 }
 
 .content-list > a {
@@ -132,8 +131,6 @@ header > ul > .menu-contents:hover{
 }
 
 #sightseeing {
-  /* background-image:url("/img/index/food.jpg"); */
-  /* border-top: 3px groove white; */
   background: url("/img/index/sightsee.png") no-repeat;
   background-size: 100% 100%;
   background-position: left top;
@@ -190,4 +187,27 @@ footer {
   height: 11vh;
   background-color: rgb(58,58,58);
 }
+
+footer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > ul > li {
+  margin: 1vh;
+  padding: 0.3vh;
+}
+
+footer > ul > li > a {
+  width: 8vh;
+  height: 8vh;
+}
+
+footer > ul > li > a > img {
+  max-width: 8vh;
+  max-height: 8vh;
+}
+
+
 /*Kihoon`s */
