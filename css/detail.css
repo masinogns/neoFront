@@ -107,12 +107,17 @@ div.container > .content{
   border-bottom: 2px solid #e9ecef;
 }
 
+.btn-container > button {
+  border: none;
+  background-color: white;
+}
+
 .btn-container > .btn-left {
-  padding-left: 1.9vh;
+  padding-left: 2.4vh;
 }
 
 .btn-container > .btn-right {
-  padding-right: 1.9vh;
+  padding-right: 2.4vh;
 }
 
 .btn-container > button > img {
@@ -126,40 +131,40 @@ div.container > .content{
   border-bottom: 2px solid #e9ecef;
 }
 
-.item > dl {
+.item > a > dl {
   width: 90%;
   margin-left: 5%;
   margin-top: 3%;
 }
 
-.item > dl > dt {
+.item > a > dl > dt {
   width: 100%;
   height: 24vh;
   background-color: blue;
 }
 
-.item > dl > dt > img{
+.item > a > dl > dt > img{
   width: 100%;
   height: 100%;
 }
 
-.item > dl > dd {
+.item > a > dl > dd {
   height: 4vh;
   display: flex;
   justify-content: flex-start;
   font-size: 2.5vh;
   padding-left: 2vh;
 }
-.item > dl > dd > span {
+.item > a > dl > dd > span {
   margin: 3px;
 }
-.item > dl > dd.name {
+.item > a > dl > dd.name {
   padding-top: 1vh;
   margin-bottom: 3vh;
   font-size: 4vh;
 }
 
-.item > dl > dd > img {
+.item > a > dl > dd > img {
   width: 4vh;
   height: 4vh;
 

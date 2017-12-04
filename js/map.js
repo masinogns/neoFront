@@ -3,7 +3,7 @@ var map;
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+// output.innerHTML = slider.value;
 
 var opt = { minZoom: 9, maxZoom: 15 };
 
