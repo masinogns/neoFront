@@ -12,6 +12,11 @@ body{
   font-size: 1.5rem;
 }
 
+ul, ol, li {
+  display: block;
+  list-style: none;
+}
+
 a{
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -209,10 +214,15 @@ footer > ul > li > a > img {
   max-height: 8vh;
 }
 
+footer > ul > li > a > button {
+  background-color: rgba(255, 0, 0, 0);
+  border: 0px;
+}
 /*setting btn, same code with upper code*/
 footer > ul > li > a > button > img {
   max-width: 8vh;
   max-height: 8vh;
+
 }
 
 .active {
@@ -227,10 +237,6 @@ footer > ul > li > a > button > img {
 
 #google_translate_element {
   margin-bottom: 3vh;
-}
-
-.goog-te-gadget-simple {
-
 }
 
 .goog-te-menu-value {
@@ -290,8 +296,6 @@ img.goog-te-gadget-icon {
   bottom: 0;
   right: 0;
 }
-
-
 
 
 /*Kihoon`s */

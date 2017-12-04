@@ -11,8 +11,8 @@
   <body>
     <header>
         <div class="main-title">
-            <span class="menu-item"><img src="/img/menu-btn.png" alt="menu"></span>
-            <h1 class="title">neo</h1>
+            <span class="menu-item"><img src="/img/menu-btn2.png" alt="menu"></span>
+            <h1 class="title"><a href="/">JEJU TRAVLE</a></h1>
         </div>
         <div class="menu-modal">
           <ul class="menu-modal-list">
@@ -21,32 +21,41 @@
           </ul>
         </div>
         <ul class="header-option-list">
-            <a href="/detail.html" class="menu-contents">
+            <a href="/detail.html" class="menu-contents active">
                 <li>
                     맛집
                 </li>
             </a>
-            <a href="#" class="menu-contents">
+            <a href="/detail.html" class="menu-contents">
                 <li>
                     관광지
                 </li>
             </a>
-            <a href="#" class="menu-contents">
+            <a href="/detail.html" class="menu-contents">
                 <li>
                     숙박
                 </li>
             </a>
         </ul>
+
     </header>
+
+
+
     <div class="container map-container">
       <ul class="nav">
-        <li class="active"><a class="map" href="#">Map</a></li>
+        <li class="activeB"><a class="map" href="#">Map</a></li>
         <li class=""><a class="list" href="#">List</a></li>
       </ul>
 
       <div id="slidecontainer">
         <input type="range" min="1" max="5" value="2" class="slider" id="myRange">
         <p>Value: <span id="demo"></span></p>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn-left"><img src="/img/detail/minus.png" alt="minus"></button>
+        <button class="btn-right"><img src="/img/detail/plus.png" alt="plus"></button>
       </div>
 
       <div class="content">
@@ -66,8 +75,9 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
     }
-    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript" src="/js/base.js"></script>
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="/js/base.js"></script> -->
     <script type="text/javascript" src = "/js/detail.js"></script>
 
     <script async defer

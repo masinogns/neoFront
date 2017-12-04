@@ -5,15 +5,15 @@ https://www.w3schools.com/howto/howto_js_rangeslider.asp*/
 
 
 var content = document.querySelector(".content");
-
 var tag = document.querySelector(".nav");
+
 tag.addEventListener('click', activeNav);
 
 function activeNav(e){
   var findIndexOfActive = 0;
 
   for (var i = 0; i < tag.childElementCount; i++) {
-    if (tag.children[i].className == "active") {
+    if (tag.children[i].className == "activeB") {
       findIndexOfActive = i;
     }
   }
@@ -37,9 +37,9 @@ function activeNav(e){
 
 function changeActive(parent, index){
   tag.children[index].className = "";
-  parent.className = "active";
+  parent.className = "activeB";
 }
 
 function googleTranslateElementInit() {
-new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'ko,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }

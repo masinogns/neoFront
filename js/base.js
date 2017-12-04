@@ -41,3 +41,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+var home = document.getElementById('home');
+// var close = document.getElementsByTagName('iframe')[0].contentWindow.document.getElementsByClassName("goog-close-link").
+
+home.addEventListener("click", function(){
+  console.log("close button is clicked");
+  // close.
+});
