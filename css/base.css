@@ -189,7 +189,11 @@ header > ul > .menu-contents:hover{
 }
 
 footer {
+  position: fixed;
+  z-index: -10000;
+  width: 100%;
   height: 11vh;
+  bottom: 0px;
   background-color: rgb(58,58,58);
 }
 
